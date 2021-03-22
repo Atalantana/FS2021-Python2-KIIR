@@ -3,14 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Peabuddy</title>
+
+    <!-- Bootstrap einbinden --!>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- CSS-Datei einbinden --!>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
 </head>
+
+
 <body>
+
+<!-- Header einrichten --!>
 <div class="header" style="padding: 60px; text-align: center; color: white; background-color: #8dc386; font-size: 20px;">
     <h1 style="color: white; font-family: 'Century Gothic'">Peabuddy</h1>
-    <p style="font-family: 'Century Gothic'">Das nützliche Pflanzenverwaltungstool</p>
+    <p style="font-family: 'Century Gothic'">Dein nützliches Pflanzenverwaltungstool</p>
+    <!-- Bild in Header einfügen --!>
+
+        <img src="../static/erbse.jpg" width="100" height="80" class="rounded-circle";>
+
 </div>
-<h1 style="color: brown;">Test</h1>
+<br>
+<br>
+<!-- Überschrift Willkommen--!>
+<div class="container">
+    <h1 style="color: brown; font-size: 20px;">Willkommen</h1>
+</div>
+
+<!-- Textteil Willkommen--!>
+<div class="container">
+    <p>
+        Schön, dass du dieses Porgramm nutzt und du dir Sorgen und Gedanken um die Pflege deiner Pflanzen machst!<br>
+        Peabuddy hilft dir auf eine ganz einfache Art und Weise eine Übersicht über deine Pflanzen zu halten. <br>
+        Du kannst für jede deiner Pflanzen ein Profil (Eintrag) anlegen.
+    </p>
+</div>
+
+<!-- Überschrift Wie funktionierts --!>
+<div class="container">
+    <h1 style="color: brown; font-size: 20px;">Wie funktioniert das Ganze?</h1>
+</div>
+
+<!-- Textteil Wie funktionierts --!>
+<div class="container">
+    <p>
+        Du kannst für jede deiner Pflanzen ein Profil erstellen. In diesem Profil werden die wichtigsten Eigenschaften <br>
+        deiner Pflanze festgehalten. So behaltest du immer einen Überblick über deine Schützlinge.
+    </p>
+</div>
+<br>
+<br>
+<!-- Button "Loslegen!" --!>
+<div class="container" align="center">
+    <button type="button" class="btn btn-primary btn-lg" style="color: white; background-color: #3A7734; border-color: #3A7734;">Loslegen!</button>
+</div>
+
 
 </body>
 </html>

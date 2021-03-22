@@ -9,5 +9,10 @@ def home():
     return render_template("index.html")
 
 
+@app.route("/meinePflanzen")
+def meinePflanzen():
+    return render_template("meinePflanzen.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
