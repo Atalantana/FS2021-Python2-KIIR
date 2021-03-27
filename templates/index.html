@@ -10,6 +10,9 @@
     <!-- CSS-Datei einbinden --!>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 
+    <!-- Favicon einbinden --!>
+    <link rel="icon" type="image/png" href="../static/erbse.jpg">
+
 </head>
 
 
@@ -19,8 +22,8 @@
 <div class="header" style="padding: 60px; text-align: center; color: white; background-color: #8dc386; font-size: 20px;">
     <h1 style="color: white; font-family: 'Century Gothic'">Peabuddy</h1>
     <p style="font-family: 'Century Gothic'">Dein nützliches Pflanzenverwaltungstool</p>
-    <!-- Bild in Header einfügen --!>
 
+    <!-- Bild in Header einfügen --!>
         <img src="../static/erbse.jpg" width="100" height="80" class="rounded-circle";>
 
 </div>
@@ -56,11 +59,9 @@
 <br>
 <!-- Button "Loslegen!" --!>
 <div class="container" align="center">
-    <button type="button" class="btn btn-primary btn-lg" style="color: white; background-color: #3A7734; border-color: #3A7734;">Loslegen!</button>
+    <a href=meinePflanzen><button type="button" class="btn btn-primary btn-lg" style="color: white; background-color: #3A7734; border-color: #3A7734;" >Loslegen</button></a>
 </div>
 
-<h2>
-    Test
-</h2>
+
 </body>
 </html>
