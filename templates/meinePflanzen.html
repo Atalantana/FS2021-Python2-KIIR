@@ -41,7 +41,26 @@
         Mit Klick auf "Eintrag anlegen" startest du auch schon.
     </p>
     <div class="container">
-    <a href=><button type="button" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; " >+ Eintrag anlegen</button></a>
+    <a href=meinePflanzen onclick="open the form"><button type="button" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; " >+ Eintrag anlegen</button></a>
+        <br>
+        <br>
+        <div class="form-popup" id="eingabeformular">
+        <form class="changelist-form-container">
+            <label for="Pflanzentyp"><b>Pflanzentyp</b></label>
+            <br>
+            <input type="text" placeholder="Pflanzentyp" name="Pflanzentyp" required>
+            <br>
+            <br>
+            <label for="Kaufdatum"><b>Kaufdatum</b></label>
+            <br>
+            <input type="date" placeholder="Kaufdatum" name="Kaufdatum" required>
+            <br>
+            <br>
+            <label for="Wassergabe"><b>Letzte Wassergabe</b></label>
+            <br>
+            <input type="date" placeholder="Letzte Wassergabe" name="Letzte Wassergabe" required>
+        </form>
+    </div>
     </div>
 </div>
 <br>
