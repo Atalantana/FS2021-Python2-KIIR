@@ -2,6 +2,8 @@ from flask import request
 from flask import Flask
 from flask import render_template
 from flask import json
+import pandas as pd
+
 
 app = Flask("Peabuddy")
 
@@ -31,11 +33,16 @@ def result():
                 "Kaufdatum": kfdatum,
                 "Letzte Wassergabe":wsdatum
         })
-    with open("data_plants.txt", "w") as outfile:
-        json.dump(data_plants, outfile)
-    return render_template("result.html", result=result)
+        with open("data_plants.csv", "w") as outfile:
+                json.dump(data_plants, outfile)
+        daten_anzeige = pd.read_csv("data_plants.csv")
+    return render_template("result.html", daten_anzeige=daten_anzeige)
 
-#@app.route("/result", methods=["GET", "POST"])
+
+
+
+
+##@app.route("/result", methods=["GET", "POST"])
 #def result():
     #data_plants = {}
     #if request.method == "POST":
@@ -47,10 +54,10 @@ def result():
     #return render_template("result.html", result=result)
 
 
-@app.route("/Materialverwaltung")
-def materialverwlatung():
-    return render_template("Materialverwaltung.html")
 
+@app.route("/Materialverwaltung", methods=["GET", "POST"])
+def materialverwaltung():
+    return render_template("Materialverwaltung.html")
 
 
 
