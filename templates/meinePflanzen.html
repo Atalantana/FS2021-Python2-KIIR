@@ -40,7 +40,7 @@
         Hier hast du die Möglichkeit, für deine Pflanzen ein Profil bzw. einen Eintrag anzulegen. Du kannst deinen Eintrag immer wieder bearbeiten oder bereits vorhandene Einträge löschen.
         Mit Klick auf "Eintrag anlegen" startest du auch schon.
     </p>
-
+</div>
 <!-- Button "Eintrag anlegen" --!>
     <div class="container">
     <button type="button" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; " >+ Eintrag anlegen</button></a>
@@ -50,7 +50,7 @@
 
 <!-- Eingabeformular einrichten --!>
         <div class="container" id="eingabeformular">
-            <form method="POST">
+            <form action="result" method="POST">
                  <label for="Pflanzentyp"><b>Pflanzentyp</b></label>
                     <br>
             <!--<input type="text" placeholder="Pflanzentyp" name="Pflanzentyp" required>--!>
@@ -79,22 +79,17 @@
             <br>
             <input type="date" placeholder="Letzte Wassergabe" name="Wassergabe" required>
 
-    <div class="container" align="center">
-        <br>
-            <a><button type="submit" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734;>Absenden</button></a>
-    </div>
-        </form>
+                <div class="container" align="center">
+                    <a><button type="submit" class="btn btn-primary btn-sm" style="color: white;">Absenden</button></a>
+                </div>
+            </form>
 
     </div>
-        </div>
-    </div>
-</div>
-
-</div>
-
 <br>
 <br>
-
+<p>
+    {{ daten_anzeige }}
+</p>
 <br>
 <br>
 <br>

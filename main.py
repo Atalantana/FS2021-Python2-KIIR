@@ -36,7 +36,7 @@ def result():
         with open("data_plants.csv", "w") as outfile:
                 json.dump(data_plants, outfile)
         daten_anzeige = pd.read_csv("data_plants.csv")
-    return render_template("result.html", daten_anzeige=daten_anzeige)
+    return render_template("meinePflanzen.html", daten_anzeige=daten_anzeige)
 
 
 
