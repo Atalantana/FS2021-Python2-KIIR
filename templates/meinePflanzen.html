@@ -41,12 +41,7 @@
         Mit Klick auf "Eintrag anlegen" startest du auch schon.
     </p>
 </div>
-<!-- Button "Eintrag anlegen" --!>
-    <div class="container">
-    <button type="button" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; " >+ Eintrag anlegen</button></a>
-    <br>
-    <br>
-    </div>
+
 
 <!-- Eingabeformular einrichten --!>
         <div class="container" id="eingabeformular">
@@ -87,11 +82,25 @@
     </div>
 <br>
 <br>
+<div class="container" >
 <p>
-    {{ daten_anzeige }}
+   <!-- {{ anzeige }}-->
+    {% for item in anzeige %}
+    Kaufdatum: {{item.Kaufdatum}} /
+    Wassergabe: {{item.Wassergabe}} /
+    Pflanzenname: {{item.Pflanzenname}} /
+    Pflanzentyp: {{item.Pflanzentyp}}
+    {% endfor %}
 </p>
+    </div>
 <br>
 <br>
+<!-- Button "Einträge anzeigen" --!>
+    <div class="container" method="POST">
+    <button type="submit" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; " >+ Einträge anzeigen</button></a>
+    <br>
+    <br>
+    </div>
 <br>
 <br>
 <br>

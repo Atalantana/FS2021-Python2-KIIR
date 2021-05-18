@@ -3,6 +3,7 @@ from flask import Flask
 from flask import render_template
 from flask import json
 import pandas as pd
+import csv
 
 
 app = Flask("Peabuddy")
@@ -33,25 +34,12 @@ def result():
                 "Kaufdatum": kfdatum,
                 "Letzte Wassergabe":wsdatum
         })
-        with open("data_plants.csv", "w") as outfile:
+        with open("data_plants.json", "w") as outfile:
                 json.dump(data_plants, outfile)
-        daten_anzeige = pd.read_csv("data_plants.csv")
-    return render_template("meinePflanzen.html", daten_anzeige=daten_anzeige)
-
-
-
-
-
-##@app.route("/result", methods=["GET", "POST"])
-#def result():
-    #data_plants = {}
-    #if request.method == "POST":
-        #pftyp = request.form["pflanzenauswahl"]
-        #pfname = request.form["Pflanzenname"]
-        #kfdatum = request.form["Kaufdatum"]
-        #wsdatum = request.form["Wassergabe"]
-        #result= #pftyp+" "+pfname+" "+kfdatum+" "+wsdatum
-    #return render_template("result.html", result=result)
+        with open("data_plants.json", "r") as outfile:
+            anzeige = json.load(outfile)
+            anzeige1 = [value for key, value in anzeige.items()][0]
+    return render_template("meinePflanzen.html", anzeige=anzeige1)
 
 
 
