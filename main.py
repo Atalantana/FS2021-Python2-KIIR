@@ -2,11 +2,14 @@ from flask import request
 from flask import Flask
 from flask import render_template
 from flask import json
+from jinja2 import Environment
 import pandas as pd
 import csv
 
 
 app = Flask("Peabuddy")
+
+
 
 
 @app.route("/")
@@ -19,8 +22,8 @@ def meinePflanzen():
     return render_template("meinePflanzen.html")
 
 
-@app.route("/result", methods=["GET", "POST"])
-def result():
+@app.route("/meinePflanzen.html", methods=["GET", "POST"])
+def meinepflanzen():
     data_plants = {}
     if request.method == "POST":
         pftyp = request.form["pflanzenauswahl"]
@@ -32,13 +35,14 @@ def result():
                 "Pflanzentyp": pftyp,
                 "Pflanzenname": pfname,
                 "Kaufdatum": kfdatum,
-                "Letzte Wassergabe":wsdatum
+                "Wassergabe":wsdatum
         })
         with open("data_plants.json", "w") as outfile:
                 json.dump(data_plants, outfile)
         with open("data_plants.json", "r") as outfile:
             anzeige = json.load(outfile)
             anzeige1 = [value for key, value in anzeige.items()][0]
+
     return render_template("meinePflanzen.html", anzeige=anzeige1)
 
 

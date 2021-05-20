@@ -45,7 +45,7 @@
 
 <!-- Eingabeformular einrichten --!>
         <div class="container" id="eingabeformular">
-            <form action="result" method="POST">
+            <form action="meinePflanzen.html" method="POST">
                  <label for="Pflanzentyp"><b>Pflanzentyp</b></label>
                     <br>
             <!--<input type="text" placeholder="Pflanzentyp" name="Pflanzentyp" required>--!>
@@ -73,10 +73,9 @@
             <label for="Wassergabe"><b>Letzte Wassergabe</b></label>
             <br>
             <input type="date" placeholder="Letzte Wassergabe" name="Wassergabe" required>
-
-                <div class="container" align="center">
-                    <a><button type="submit" class="btn btn-primary btn-sm" style="color: white;">Absenden</button></a>
-                </div>
+                <br>
+                <br>
+                    <a><button type="submit" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Absenden</button></a>
             </form>
 
     </div>
@@ -85,10 +84,15 @@
 <div class="container" >
 <p>
    <!-- {{ anzeige }}-->
+    <b>Deine aktuelle Eingabe lautet: </b>
     {% for item in anzeige %}
+
     Kaufdatum: {{item.Kaufdatum}} /
+
     Wassergabe: {{item.Wassergabe}} /
+
     Pflanzenname: {{item.Pflanzenname}} /
+
     Pflanzentyp: {{item.Pflanzentyp}}
     {% endfor %}
 </p>
@@ -97,7 +101,7 @@
 <br>
 <!-- Button "Einträge anzeigen" --!>
     <div class="container" method="POST">
-    <button type="submit" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; " >+ Einträge anzeigen</button></a>
+    <button type="submit" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; " >Alle Einträge anzeigen</button></a>
     <br>
     <br>
     </div>
