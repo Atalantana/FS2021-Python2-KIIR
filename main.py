@@ -46,6 +46,10 @@ def meinepflanzen():
     return render_template("meinePflanzen.html", anzeige=anzeige1)
 
 
+@app.route("/AllePflanzen", methods=["GET", "POST"])
+def anzeige():
+    return render_template("AllePflanzen.html")
+
 
 @app.route("/Materialverwaltung", methods=["GET", "POST"])
 def materialverwaltung():
