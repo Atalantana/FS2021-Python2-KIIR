@@ -10,20 +10,13 @@ import csv
 app = Flask("Peabuddy")
 
 
-
-
 @app.route("/")
 def home():
     return render_template("index.html")
 
 
-@app.route("/meinePflanzen")
-def meinePflanzen():
-    return render_template("meinePflanzen.html")
-
-
 @app.route("/meinePflanzen.html", methods=["GET", "POST"])
-def meinepflanzen():
+def formular():
     data_plants = {}
     if request.method == "POST":
         pftyp = request.form["pflanzenauswahl"]
@@ -35,19 +28,20 @@ def meinepflanzen():
                 "Pflanzentyp": pftyp,
                 "Pflanzenname": pfname,
                 "Kaufdatum": kfdatum,
-                "Wassergabe":wsdatum
+                "Wassergabe": wsdatum,
         })
         with open("data_plants.json", "w") as outfile:
                 json.dump(data_plants, outfile)
         with open("data_plants.json", "r") as outfile:
             anzeige = json.load(outfile)
             anzeige1 = [value for key, value in anzeige.items()][0]
-
+    else:
+        return render_template("meinePflanzen.html")
     return render_template("meinePflanzen.html", anzeige=anzeige1)
 
 
 @app.route("/AllePflanzen", methods=["GET", "POST"])
-def anzeige():
+def hallo():
     return render_template("AllePflanzen.html")
 
 
