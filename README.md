@@ -10,11 +10,11 @@
 
 <h3>Konkrete Funktionen</h3>
 
-<p>Konkrete Funktionen bestehen aus:
-  - Eingabe der Pflanzendaten über Formular
-  - Ausgabe der Pflanzendaten (Übersicht)
-  - Bearbeiten der Pflanzendaten
-  - Läschung von EInträgen
+<p>Konkrete Funktionen bestehen aus: <br><br>
+  - Eingabe der Pflanzendaten über Formular <br>
+  - Ausgabe der Pflanzendaten (Übersicht) <br>
+  - Bearbeiten der Pflanzendaten <br>
+  - Läschung von EInträgen 
 </p>
 
 <h3>Technische Vorgänge</h3>
