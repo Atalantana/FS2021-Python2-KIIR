@@ -40,7 +40,7 @@
         <a class="nav-link" href="#">Eintrag anlegen<span class="sr-only"> (current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/AllePflanzen.html">Alle Pflanzen</a>
+        <a class="nav-link" href="/AllePflanzen">Alle Pflanzen</a>
       </li>
     </ul>
   </div>
@@ -95,6 +95,7 @@
                 <br>
                 <br>
                 <a><button type="submit" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Absenden</button></a>
+                <a><button type="reset" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; " value="Reset">Reset</button></a>
             </form>
 
     </div>
@@ -103,22 +104,20 @@
 <div class="container" >
 <p>
    <!-- {{ anzeige }}-->
-    <b>Deine aktuelle Eingabe lautet: </b>
-    {% for item in anzeige %}
+    {% if anzeige %}
+    <b>Deine aktuelle Eingabe lautet: </b> <br>
 
-    Kaufdatum: {{item.Kaufdatum}} /
+    Pflanzentyp: {{anzeige["Pflanzentyp"]}} <br>
+    Pflanzenname: {{anzeige["Pflanzenname"]}} <br>
+    Kaufdatum: {{anzeige["Kaufdatum"]}} <br>
+    Wassergabe: {{anzeige["Wassergabe"]}}
 
-    Wassergabe: {{item.Wassergabe}} /
-
-    Pflanzenname: {{item.Pflanzenname}} /
-
-    Pflanzentyp: {{item.Pflanzentyp}}
-    {% endfor %}
+    {% endif %}
 </p>
     </div>
 <br>
 <br>
-<!-- Button "Einträge anzeigen" --!>
+<!-- Button "Einträge anzeigen" -->
     <div class="container" method="POST">
     <a href=/AllePflanzen><button type="submit" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; " >Alle Einträge anzeigen</button></a>
     <br>

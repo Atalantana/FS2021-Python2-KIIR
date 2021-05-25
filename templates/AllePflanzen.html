@@ -48,26 +48,30 @@
 </div>
 <br>
 <br>
-<div class="container" >
-<p>
-   <!-- {{ anzeige }}-->
-    {% for item in anzeige %}
-
-    Kaufdatum: {{item.Kaufdatum}} /
-
-    Wassergabe: {{item.Wassergabe}} /
-
-    Pflanzenname: {{item.Pflanzenname}} /
-
-    Pflanzentyp: {{item.Pflanzentyp}}
-    {% endfor %}
-</p>
-    </div>
-
-
 <br>
 <br>
-
+<div class="container">
+<table style="width: 50%;" id="table">
+      <thead>
+        <tr>
+          <th>Pflanzentyp</th>
+          <th>Pflanzenname</th>
+          <th>Kaufdatum</th>
+          <th>Wassergabe</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in anzeige %}
+        <tr>
+          <td>{{item["Pflanzentyp"]}}</td>
+          <td>{{item["Pflanzenname"]}}</td>
+          <td>{{item["Kaufdatum"]}}</td>
+          <td>{{item["Wassergabe"]}}</td>
+        </tr>
+        {%  endfor %}
+      </tbody>
+    </table>
+</div>
 <br>
 <br>
 <br>

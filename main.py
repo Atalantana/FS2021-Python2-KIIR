@@ -31,20 +31,21 @@ def formular():
         with open("data_plants.json", "r+") as outfile:
             pflanzen = json.load(outfile)
             pflanzen.append(data_plants)
-            #anzeige1 = [value for key, value in pflanzen.items()][0]
+
         with open("data_plants.json", "w") as outfile:
             json.dump(pflanzen, outfile, indent=4)
+        return render_template("meinePflanzen.html", anzeige=data_plants)
     else:
-        return render_template("meinePflanzen.html")
-    return render_template("meinePflanzen.html")
+        return render_template("meinePflanzen.html", anzeige=False)
+
 
 
 @app.route("/AllePflanzen", methods=["GET", "POST"])
 def anzeigeAlle():
-    with open("data_plants.json", "r") as outfile:
-        anzeige = json.load(outfile)
-        anzeige1 = [value for key, value in anzeige.items()][0]
-    return render_template("AllePflanzen.html", anzeige=anzeige1)
+    with open("data_plants.json", "r+") as outfile:
+        pflanzen = json.load(outfile)
+    return render_template("AllePflanzen.html", anzeige=pflanzen)
+    return render_template("AllePflanzen.html", anzeige=False)
 
 
 def bearbeiten():
