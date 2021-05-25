@@ -14,7 +14,7 @@
   - Eingabe der Pflanzendaten über Formular <br>
   - Ausgabe der Pflanzendaten (Übersicht) <br>
   - Bearbeiten der Pflanzendaten <br>
-  - Läschung von EInträgen 
+  - Löschung von Einträgen ö
 </p>
 
 <h3>Technische Vorgänge</h3>
