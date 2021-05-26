@@ -47,9 +47,6 @@
 </nav>
 </div>
 <br>
-<br>
-<br>
-<br>
 <div class="container">
 <table style="width: 50%;" id="table">
       <thead>
@@ -67,6 +64,8 @@
           <td>{{item["Pflanzenname"]}}</td>
           <td>{{item["Kaufdatum"]}}</td>
           <td>{{item["Wassergabe"]}}</td>
+          <td><button type="submit" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Bearbeiten</button></td>
+          <td><button type="submit" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Löschen</button></td>
         </tr>
         {%  endfor %}
       </tbody>

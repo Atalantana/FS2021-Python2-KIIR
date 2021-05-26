@@ -1,20 +1,16 @@
 [
     {
-        "Kaufdatum": "2021-05-08",
-        "Pflanzenname": "Asmadee",
-        "Pflanzentyp": "Normale Zimmerpflanze",
-        "Wassergabe": "2021-05-21"
-    },
-    {
-        "Kaufdatum": "2021-05-14",
-        "Pflanzenname": "Kakti",
-        "Pflanzentyp": "Orchidee",
-        "Wassergabe": "2021-05-27"
-    },
-    {
-        "Kaufdatum": "2021-05-02",
-        "Pflanzenname": "Chila",
+        "ID": 1,
+        "Kaufdatum": "2021-05-15",
+        "Pflanzenname": "Era",
         "Pflanzentyp": "Chilli",
-        "Wassergabe": "2021-06-05"
+        "Wassergabe": "2021-05-16"
+    },
+    {
+        "ID": 2,
+        "Kaufdatum": "2021-05-02",
+        "Pflanzenname": "Rosa",
+        "Pflanzentyp": "Chilli",
+        "Wassergabe": "2021-05-30"
     }
 ]
