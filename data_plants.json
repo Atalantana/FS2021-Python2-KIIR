@@ -1,16 +1,16 @@
 [
     {
-        "ID": 1,
-        "Kaufdatum": "2021-05-15",
-        "Pflanzenname": "Era",
-        "Pflanzentyp": "Chilli",
-        "Wassergabe": "2021-05-16"
+        "Kaufdatum": "2021-05-02",
+        "Pflanzenname": "Kakti",
+        "Pflanzentyp": "Orchidee",
+        "Timestamp": 1622207310.137123,
+        "Wassergabe": "2021-05-30"
     },
     {
-        "ID": 2,
         "Kaufdatum": "2021-05-02",
         "Pflanzenname": "Rosa",
-        "Pflanzentyp": "Chilli",
-        "Wassergabe": "2021-05-30"
+        "Pflanzentyp": "Palme",
+        "Timestamp": 1622207428.679041,
+        "Wassergabe": "2021-05-31"
     }
 ]
