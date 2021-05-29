@@ -1,16 +1,9 @@
 [
     {
         "Kaufdatum": "2021-05-02",
-        "Pflanzenname": "Kakti",
-        "Pflanzentyp": "Orchidee",
-        "Timestamp": 1622207310.137123,
-        "Wassergabe": "2021-05-30"
-    },
-    {
-        "Kaufdatum": "2021-05-02",
-        "Pflanzenname": "Rosa",
-        "Pflanzentyp": "Palme",
-        "Timestamp": 1622207428.679041,
-        "Wassergabe": "2021-05-31"
+        "Pflanzenname": "Era",
+        "Pflanzentyp": "Normale Zimmerpflanze",
+        "Timestamp": "1622287997.363812",
+        "Wassergabe": "2021-06-06"
     }
 ]

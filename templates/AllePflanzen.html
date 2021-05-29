@@ -48,6 +48,7 @@
 </div>
 <br>
 <div class="container">
+    <form action="loesch" method="POST">
 <table style="width: 50%;" id="table">
       <thead>
         <tr>
@@ -58,19 +59,21 @@
         </tr>
       </thead>
       <tbody>
-        {% for item in anzeige %}
+
 
         <tr>
+            {% for item in anzeige %}
           <td>{{item["Pflanzentyp"]}}</td>
           <td>{{item["Pflanzenname"]}}</td>
           <td>{{item["Kaufdatum"]}}</td>
           <td>{{item["Wassergabe"]}}</td>
-          <td><button type="submit" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Bearbeiten</button></td>
-          <td><button type="submit" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Löschen</button></td>
+            <td><button type="submit" name="beapfl" id="beapfl" value="{{item['Timestamp']}}" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Bearbeiten</button></td>
+            <td><button type="submit" name="delpfl" id="delpfl" value="{{item['Timestamp']}}" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Löschen</button></td>
         </tr>
         {%  endfor %}
       </tbody>
     </table>
+        </form>
 </div>
 <br>
 <br>
