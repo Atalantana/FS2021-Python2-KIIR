@@ -1,9 +1,37 @@
 [
     {
-        "Kaufdatum": "2021-05-02",
+        "Kaufdatum": "2021-05-08",
         "Pflanzenname": "Era",
-        "Pflanzentyp": "Normale Zimmerpflanze",
-        "Timestamp": "1622287997.363812",
-        "Wassergabe": "2021-06-06"
+        "Pflanzentyp": "Chilli",
+        "Timestamp": "1622402665.635756",
+        "Wassergabe": "2021-05-19"
+    },
+    {
+        "Kaufdatum": "2021-05-09",
+        "Pflanzenname": "Asmadee",
+        "Pflanzentyp": "Rose",
+        "Timestamp": "1622403476.807728",
+        "Wassergabe": "2021-05-24"
+    },
+    {
+        "Kaufdatum": "2021-05-14",
+        "Pflanzenname": "Era",
+        "Pflanzentyp": "Rose",
+        "Timestamp": "1622403485.465939",
+        "Wassergabe": "2021-05-17"
+    },
+    {
+        "Kaufdatum": "2021-05-08",
+        "Pflanzenname": "Asmadee",
+        "Pflanzentyp": "Kaktus",
+        "Timestamp": "1622403493.456159",
+        "Wassergabe": "2021-05-25"
+    },
+    {
+        "Kaufdatum": "2021-06-01",
+        "Pflanzenname": "Asmadee",
+        "Pflanzentyp": "Chilli",
+        "Timestamp": "1622403500.178035",
+        "Wassergabe": "2021-05-31"
     }
 ]

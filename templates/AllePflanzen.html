@@ -42,6 +42,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Alle Pflanzen<span class="sr-only"> (current)</span></a>
       </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/Statistiken">Statistiken</a>
+      </li>
     </ul>
   </div>
 </nav>
@@ -67,7 +70,7 @@
           <td>{{item["Pflanzenname"]}}</td>
           <td>{{item["Kaufdatum"]}}</td>
           <td>{{item["Wassergabe"]}}</td>
-            <td><button type="submit" name="beapfl" id="beapfl" value="{{item['Timestamp']}}" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Bearbeiten</button></td>
+            <td><button onclick="function bearbeit()" name="beapfl" id="beapfl" value="{{item['Timestamp']}}" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Bearbeiten</button></td>
             <td><button type="submit" name="delpfl" id="delpfl" value="{{item['Timestamp']}}" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Löschen</button></td>
         </tr>
         {%  endfor %}

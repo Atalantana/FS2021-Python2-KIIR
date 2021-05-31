@@ -4,6 +4,8 @@ from flask import render_template
 from flask import json
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for
+import easygui
+import plotly.express as px
 import tkinter as tk
 from jinja2 import Environment
 import pandas as pd
@@ -72,27 +74,10 @@ def loesch():
     return redirect(url_for("anzeigeAlle"))
 
 
-@app.route("/bearbeit", methods=["GET", "POST"])
-def bearbeit():
-    with open("data_plants.json", "r+") as outfile:
-        pflanzen = json.load(outfile)
-    if request.method == 'POST':
-        timest = request.form["beabpfl"]
-        for eintr in pflanzen:
-            timest_json = eintr["Timestamp"]
-            print("JSON", timest_json)
-            print("Form", timest)
-            if timest == timest_json:
-                pflanzen.remove(eintr)
-            with open("data_plants.json", "w") as outfile:
-                json.dump(pflanzen, outfile, indent=4)
-        return redirect(url_for("anzeigeAlle"))
-    return redirect(url_for("anzeigeAlle"))
 
-
-@app.route("/Materialverwaltung", methods=["GET", "POST"])
-def materialverwaltung():
-    return render_template("Materialverwaltung.html")
+@app.route("/Statistiken", methods=["GET", "POST"])
+def statistiken():
+    return render_template("Statistiken.html")
 
 
 
