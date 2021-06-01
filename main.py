@@ -17,14 +17,22 @@ app = Flask("Peabuddy")
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    kaktus = 30
+    orchidee = 7
+    zimmerpflanze = 3
+    kraeuter = 3
+    rose = 7
+    palme = 30
+    with open("data_plants.json", "r+") as outfile:
+        pflanzen = json.load(outfile)
+    check = datetime.now()
+    return render_template("index.html", anzeige=pflanzen)
 
 
 @app.route("/meinePflanzen.html", methods=["GET", "POST"])
 def formular():
     pflanzen = []
     data_plants = {}
-
     if request.method == "POST":
         pftyp = request.form["Pflanzentyp"]
         pfname = request.form["Pflanzenname"]

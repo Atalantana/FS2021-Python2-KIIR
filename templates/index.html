@@ -51,7 +51,24 @@
   </div>
 </nav>
 </div>
-<br>
+<div class="container">
+<table frame="box" border="8" bordercolor="green" bgcolor="#f5f5dc" cellpadding="10" style="width: 20%;" id="table" align="right">
+
+      <thead bgcolor="lightgreen">
+
+      <th>Pflanzentyp</th>
+          <th id="wateralert">Letzte Wassergabe</th>
+      </thead>
+      <tbody>
+        <tr>
+           {% for item in anzeige %}
+            <td>{{item["Pflanzentyp"]}}</td>
+            <td>{{item["Wassergabe"]}}</td><br>
+        </tr>
+        {%  endfor %}
+      </tbody>
+    </table>
+    </div>
 <br>
 <!-- Überschrift Willkommen--!>
 <div class="container">
@@ -82,13 +99,22 @@
         Du kannst für jede deiner Pflanzen einen Eintrag anlegen. In diesem Eintrag werden die wichtigsten Eigenschaften <br>
         deiner Pflanze festgehalten. So behaltest du immer einen Überblick über deine Schützlinge. Du kannst entweder mit den Buttons oder oben in der Navigationsleiste durch die Seiten navigieren.
     </p>
+
+
 </div>
 <br>
 <br>
 <!-- Button "Loslegen!" --!>
 <div class="container" align="left">
     <a href="meinePflanzen.html"><button type="button" class="btn btn-primary btn-lg" style="color: white; background-color: #3A7734; border-color: #3A7734;" >Loslegen</button></a>
-</div>
+ </div>
+<br>
+<div class="container">
 
+</div>
+<br>
+<br>
+<br>
+<br>
 </body>
 </html>

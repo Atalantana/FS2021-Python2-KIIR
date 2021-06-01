@@ -1,37 +1,23 @@
 [
     {
-        "Kaufdatum": "2021-05-08",
-        "Pflanzenname": "Era",
+        "Kaufdatum": "2021-04-22",
+        "Pflanzenname": "Rosa",
         "Pflanzentyp": "Chilli",
-        "Timestamp": "1622402665.635756",
-        "Wassergabe": "2021-05-19"
+        "Timestamp": "1622567471.021478",
+        "Wassergabe": "2021-05-31"
     },
     {
-        "Kaufdatum": "2021-05-09",
-        "Pflanzenname": "Asmadee",
-        "Pflanzentyp": "Rose",
-        "Timestamp": "1622403476.807728",
-        "Wassergabe": "2021-05-24"
-    },
-    {
-        "Kaufdatum": "2021-05-14",
-        "Pflanzenname": "Era",
-        "Pflanzentyp": "Rose",
-        "Timestamp": "1622403485.465939",
+        "Kaufdatum": "2021-05-02",
+        "Pflanzenname": "Rose",
+        "Pflanzentyp": "Palme",
+        "Timestamp": "1622567489.321268",
         "Wassergabe": "2021-05-17"
     },
     {
-        "Kaufdatum": "2021-05-08",
-        "Pflanzenname": "Asmadee",
-        "Pflanzentyp": "Kaktus",
-        "Timestamp": "1622403493.456159",
-        "Wassergabe": "2021-05-25"
-    },
-    {
-        "Kaufdatum": "2021-06-01",
-        "Pflanzenname": "Asmadee",
-        "Pflanzentyp": "Chilli",
-        "Timestamp": "1622403500.178035",
-        "Wassergabe": "2021-05-31"
+        "Kaufdatum": "2021-05-02",
+        "Pflanzenname": "Era",
+        "Pflanzentyp": "Palme",
+        "Timestamp": "1622567841.859576",
+        "Wassergabe": "2021-05-03"
     }
 ]
