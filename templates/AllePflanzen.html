@@ -58,7 +58,7 @@
           <th>Pflanzentyp</th>
           <th>Pflanzenname</th>
           <th>Kaufdatum</th>
-          <th>Wassergabe</th>
+          <th>Letzte Wassergabe</th>
         </tr>
       </thead>
       <tbody>
@@ -70,7 +70,7 @@
           <td>{{item["Pflanzenname"]}}</td>
           <td>{{item["Kaufdatum"]}}</td>
           <td>{{item["Wassergabe"]}}</td>
-            <td><button onclick="function bearbeit()" name="beapfl" id="beapfl" value="{{item['Timestamp']}}" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Bearbeiten</button></td>
+            <td><button type="submit" name="aktual" id="aktual" value="{{item['Timestamp']}}" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Wassergabe aktualisieren</button></td>
             <td><button type="submit" name="delpfl" id="delpfl" value="{{item['Timestamp']}}" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Löschen</button></td>
         </tr>
         {%  endfor %}
