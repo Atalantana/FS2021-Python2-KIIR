@@ -52,13 +52,14 @@
 <br>
 <div class="container">
     <form action="loesch" method="POST">
-<table style="width: 50%;" id="table">
+<table style="width: 90%;" id="table">
       <thead>
         <tr>
           <th>Pflanzentyp</th>
           <th>Pflanzenname</th>
           <th>Kaufdatum</th>
           <th>Letzte Wassergabe</th>
+          <th>Tage seit letzter Wassergabe</th>
         </tr>
       </thead>
       <tbody>
@@ -70,7 +71,8 @@
           <td>{{item["Pflanzenname"]}}</td>
           <td>{{item["Kaufdatum"]}}</td>
           <td>{{item["Wassergabe"]}}</td>
-            <td><button type="submit" name="aktual" id="aktual" value="{{item['Timestamp']}}" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Wassergabe aktualisieren</button></td>
+          <td>{{item["Tage"]}}</td>
+            <td><button type="submit" name="aktual" id="aktual" value="{{item['Timestamp']}}" class="btn btn-secondary btn-sm" formaction="/aktual" style="color: white; background-color: #3A7734; border-color: #3A7734;">Wassergabe aktualisieren</button></td>
             <td><button type="submit" name="delpfl" id="delpfl" value="{{item['Timestamp']}}" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Löschen</button></td>
         </tr>
         {%  endfor %}

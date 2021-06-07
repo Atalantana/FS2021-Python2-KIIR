@@ -1,37 +1,9 @@
 [
     {
-        "Kaufdatum": "2021-04-22",
-        "Pflanzenname": "Rosa",
-        "Pflanzentyp": "Chilli",
-        "Timestamp": "1622567471.021478",
-        "Wassergabe": "2021-05-31"
-    },
-    {
-        "Kaufdatum": "2021-05-02",
-        "Pflanzenname": "Era",
-        "Pflanzentyp": "Palme",
-        "Timestamp": "1622567841.859576",
-        "Wassergabe": "2021-05-03"
-    },
-    {
         "Kaufdatum": "2021-05-31",
-        "Pflanzenname": "Selma",
-        "Pflanzentyp": "Orchidee",
-        "Timestamp": "1622991279.678558",
-        "Wassergabe": "2021-06-02"
-    },
-    {
-        "Kaufdatum": "2021-05-08",
-        "Pflanzenname": "Hildegard",
-        "Pflanzentyp": "Kaktus",
-        "Timestamp": "1622991305.011872",
-        "Wassergabe": "2021-05-24"
-    },
-    {
-        "Kaufdatum": "2021-05-14",
-        "Pflanzenname": "Hot",
+        "Pflanzenname": "Era",
         "Pflanzentyp": "Chilli",
-        "Timestamp": "1622991346.251569",
-        "Wassergabe": "2021-05-27"
+        "Timestamp": "1623077233.123411",
+        "Wassergabe": "2021-06-04"
     }
 ]

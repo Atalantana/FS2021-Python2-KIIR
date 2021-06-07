@@ -11,6 +11,7 @@ from plotly.offline import plot
 import tkinter as tk
 from jinja2 import Environment
 import pandas as pd
+from colorama import init, Fore, Back, Style
 import csv
 from IPython.display import display
 
@@ -20,16 +21,17 @@ app = Flask("Peabuddy")
 
 @app.route("/")
 def home():
-    kaktus = 30
-    orchidee = 7
-    zimmerpflanze = 3
-    kraeuter = 3
-    rose = 7
-    palme = 30
     with open("data_plants.json", "r+") as outfile:
         pflanzen = json.load(outfile)
-    check = datetime.now()
-    return render_template("index.html", anzeige=pflanzen)
+        pflanzen_sorted = sorted(pflanzen, key=lambda k: k['Wassergabe'])
+        for item in pflanzen:
+            minus = datetime.strptime(item["Wassergabe"], "%Y-%m-%d")
+            today = datetime.today()
+            toddate = today.date()
+            mindate = minus.date()
+            diffdays = toddate - mindate
+            item["Tage"] = str(diffdays.days)
+    return render_template("index.html", anzeige=pflanzen_sorted)
 
 
 @app.route("/meinePflanzen.html", methods=["GET", "POST"])
@@ -52,6 +54,7 @@ def formular():
             now = datetime.now()
             timestamp = datetime.timestamp(now)
             data_plants["Timestamp"]= str(timestamp)
+
         with open("data_plants.json", "w") as outfile:
             json.dump(pflanzen, outfile, indent=4)
         return render_template("meinePflanzen.html", anzeige=data_plants)
@@ -64,8 +67,13 @@ def anzeigeAlle():
     with open("data_plants.json", "r+") as outfile:
         pflanzen = json.load(outfile)
         pflanzen_sorted = sorted(pflanzen, key=lambda k: k['Wassergabe'])
-
-
+        for item in pflanzen:
+            minus = datetime.strptime(item["Wassergabe"], "%Y-%m-%d")
+            today = datetime.today()
+            toddate = today.date()
+            mindate = minus.date()
+            diffdays = toddate - mindate
+            item["Tage"] = str(diffdays.days)
     return render_template("AllePflanzen.html", anzeige=pflanzen_sorted)
     return render_template("AllePflanzen.html", anzeige=False)
 
@@ -82,6 +90,22 @@ def loesch():
             print("Form", timest)
             if timest == timest_json:
                 pflanzen.remove(eintr)
+            with open("data_plants.json", "w") as outfile:
+                json.dump(pflanzen, outfile, indent=4)
+        return redirect(url_for("anzeigeAlle"))
+    return redirect(url_for("anzeigeAlle"))
+
+
+@app.route("/aktual", methods=["GET", "POST"])
+def aktual():
+    with open("data_plants.json", "r+") as outfile:
+        pflanzen = json.load(outfile)
+    if request.method == 'POST':
+        uptime = request.form["aktual"]
+        for eintr in pflanzen:
+            upjson = eintr["Timestamp"]
+            if uptime == upjson:
+                eintr["Wassergabe"] = datetime.today().strftime('%Y-%m-%d')
             with open("data_plants.json", "w") as outfile:
                 json.dump(pflanzen, outfile, indent=4)
         return redirect(url_for("anzeigeAlle"))
