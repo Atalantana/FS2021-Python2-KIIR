@@ -31,7 +31,7 @@ Nebst dem Löschen und dem Aktualisieren von Listeneinträgen werden zudem die T
 Das Programm ist so ausgelegt, dass es lokal verwendet wird. Das heisst, dass es nicht von mehreren Personen gleichzeitig benutzt werden sollte. 
 
 <h4>Startseite</h4>
-<p>Auf der Startseite wird man Willkommen geheissen und es werden direkt (sofern vorhanden) die bereits eingetragenen Pflanzen mit Pflanzentyp, Pflanzenname und Tage seit letzter Wassergabe sortiert nach dem letzten Wassergabedatum angezeigt. Mit Klick auf den Button "Loslegen" gelangt man nun direkt zur Seite, wo man mit einem Formular einen Eintrag anlegen kann. 
+<p>Auf der Startseite wird man Willkommen geheissen und es werden direkt (sofern vorhanden) die bereits eingetragenen Pflanzen mit Pflanzentyp, Pflanzenname und Tage seit letzter Wassergabe sortiert nach dem letzten Wassergabedatum angezeigt. Mit Klick auf den Button "Loslegen" gelangt man nun direkt zur Seite, wo man mit einem Formular einen Eintrag anlegen kann. <br>
 <img src="static/Startseite.png" alt="Startseite">
 
 Auf der Seite "Eintrag anlegen" hat man nun die Möglichkeit, im vorhandenen Formular aus bereits vordefinierten Pflanzentypen einen Pflanzentyp auszuwählen, den Pfalnzennamen anzugeben, wann die Pflanze gekauft wurde und wann sie das letzte Mal Wasser erhalten hat. Mit dem Button "Reset" kann der Inhalt des Formulars bereinigt werden, mit Klick auf "Absenden" werden die Daten in einer JSON-Datei gespeichert.
