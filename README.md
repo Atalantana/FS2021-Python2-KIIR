@@ -31,17 +31,17 @@ Nebst dem Löschen und dem Aktualisieren von Listeneinträgen werden zudem die T
 Das Programm ist so ausgelegt, dass es lokal verwendet wird. Das heisst, dass es nicht von mehreren Personen gleichzeitig benutzt werden sollte. 
 
 <h4>Startseite</h4>
-<p>Auf der Startseite wird man Willkommen geheissen und es werden direkt (sofern vorhanden) die bereits eingetragenen Pflanzen mit Pflanzentyp, Pflanzenname und Tage seit letzter Wassergabe sortiert nach dem letzten Wassergabedatum angezeigt. Mit Klick auf den Button "Loslegen" gelangt man nun direkt zur Seite, wo man mit einem Formular einen Eintrag anlegen kann. <br>
+<p>Auf der Startseite wird man Willkommen geheissen und es werden direkt (sofern vorhanden) die bereits eingetragenen Pflanzen mit Pflanzentyp, Pflanzenname und Tage seit letzter Wassergabe sortiert nach dem letzten Wassergabedatum angezeigt. Mit Klick auf den Button "Loslegen" gelangt man nun direkt zur Seite, wo man mit einem Formular einen Eintrag anlegen kann. <br><br>
 <img src="static/Startseite.png" alt="Startseite">
 
 Auf der Seite "Eintrag anlegen" hat man nun die Möglichkeit, im vorhandenen Formular aus bereits vordefinierten Pflanzentypen einen Pflanzentyp auszuwählen, den Pfalnzennamen anzugeben, wann die Pflanze gekauft wurde und wann sie das letzte Mal Wasser erhalten hat. Mit dem Button "Reset" kann der Inhalt des Formulars bereinigt werden, mit Klick auf "Absenden" werden die Daten in einer JSON-Datei gespeichert.
-Mit Klick auf den Button "Alle Einträge anzeigen" gelangt der Benutzer auf eine Übersichtsseite "Alle Pflanzen", wo ihm in tabellarischer Form alle seine Pflanzeneinträge angezeigt werden.
+Mit Klick auf den Button "Alle Einträge anzeigen" gelangt der Benutzer auf eine Übersichtsseite "Alle Pflanzen", wo ihm in tabellarischer Form alle seine Pflanzeneinträge angezeigt werden. <br><br>
 <img src="static/EintragAnlegen.png" alt="Eintrag anlegen">
 
-Auf der Seite "Alle Pflanzen" werden nun wie schon erwähnt alle Listeneinträge angezeigt, geordnet nach dem letzten Wassergabedatum. Hier besteht nun die Möglichkeit, dass ein einzelner Listeneintrag gelöscht werden kann oder das Wassergabedatum aktualisiert werden kann. Mit dem aktualisieren des Wassergabedatums werden automatisch die Tage seit der letzten Wassergabe aktualisiert. Die Pflanze, welche am längsten kein Wasser bekommen hat, wird immer zuoberst angezeigt.
+Auf der Seite "Alle Pflanzen" werden nun wie schon erwähnt alle Listeneinträge angezeigt, geordnet nach dem letzten Wassergabedatum. Hier besteht nun die Möglichkeit, dass ein einzelner Listeneintrag gelöscht werden kann oder das Wassergabedatum aktualisiert werden kann. Mit dem aktualisieren des Wassergabedatums werden automatisch die Tage seit der letzten Wassergabe aktualisiert. Die Pflanze, welche am längsten kein Wasser bekommen hat, wird immer zuoberst angezeigt.<br><br>
 <img src="static/AllePflanzen.png" alt="AllePflanzen">
 
-Auf der Seite "Statistiken" wird dem Benutzer eine Pie Chart angezeigt, in welcher er sehen kann, was für unterschiedliche Pflanzentypen er insgesamt besitzt. Wenn man über die Grafik "fährt" bzw. mit dem Mauszeiger über ein Kuchenteil fährt, so sieht man gelichzeitig in einem kleinen Pop-Up die Menge (value) an Pflanzen, welche zum entsprechenden Pflanzentyp gehören. Man kann sich die Grafik optional als PNG abspeichern (die entsprechenden Buttons sollten oben recht in der Pie Chart erscheinen.)
+Auf der Seite "Statistiken" wird dem Benutzer eine Pie Chart angezeigt, in welcher er sehen kann, was für unterschiedliche Pflanzentypen er insgesamt besitzt. Wenn man über die Grafik "fährt" bzw. mit dem Mauszeiger über ein Kuchenteil fährt, so sieht man gelichzeitig in einem kleinen Pop-Up die Menge (value) an Pflanzen, welche zum entsprechenden Pflanzentyp gehören. Man kann sich die Grafik optional als PNG abspeichern (die entsprechenden Buttons sollten oben recht in der Pie Chart erscheinen.) <br><br>
 <img src="static/Statistik.png" alt="Statistik">
 
 </p>
