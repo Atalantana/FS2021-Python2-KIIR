@@ -13,7 +13,8 @@
 <p>Konkrete Funktionen bestehen aus: <br><br>
   - Eingabe der Pflanzendaten über Formular <br>
   - Ausgabe der Pflanzendaten (Übersicht) <br>
-  - Bearbeiten der Pflanzendaten <br>
+  - Speicherung und Anzeige der Einträge <br>
+  - Aktualisierung des Wassergabedatums <br>
   - Löschung von Einträgen
 </p>
 
