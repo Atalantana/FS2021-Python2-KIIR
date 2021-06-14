@@ -5,5 +5,33 @@
         "Pflanzentyp": "Chilli",
         "Timestamp": "1623077233.123411",
         "Wassergabe": "2021-06-04"
+    },
+    {
+        "Kaufdatum": "2021-05-03",
+        "Pflanzenname": "Kakti",
+        "Pflanzentyp": "Chilli",
+        "Timestamp": "1623079177.281791",
+        "Wassergabe": "2021-05-19"
+    },
+    {
+        "Kaufdatum": "2021-04-03",
+        "Pflanzenname": "Asmadee",
+        "Pflanzentyp": "Rose",
+        "Timestamp": "1623079193.472666",
+        "Wassergabe": "2021-05-17"
+    },
+    {
+        "Kaufdatum": "2021-02-03",
+        "Pflanzenname": "Hans",
+        "Pflanzentyp": "Normale Zimmerpflanze",
+        "Timestamp": "1623079210.612796",
+        "Wassergabe": "2021-06-08"
+    },
+    {
+        "Kaufdatum": "2021-04-01",
+        "Pflanzenname": "Rose",
+        "Pflanzentyp": "Orchidee",
+        "Timestamp": "1623167458.824272",
+        "Wassergabe": "2021-06-08"
     }
 ]

@@ -1,19 +1,10 @@
-from flask import request
-from flask import Flask
-from flask import render_template
 from flask import json
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for
 from collections import Counter
-import easygui
 import plotly.express as px
 from plotly.offline import plot
-import tkinter as tk
-from jinja2 import Environment
 import pandas as pd
-from colorama import init, Fore, Back, Style
-import csv
-from IPython.display import display
 
 
 app = Flask("Peabuddy")
