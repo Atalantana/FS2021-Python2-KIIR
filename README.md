@@ -12,6 +12,7 @@
 
 <p>Konkrete Funktionen bestehen aus: <br><br>
   - Eingabe der Pflanzendaten über Formular <br>
+<img src="static/EintragAnlegen.png" alt="Eintrag">
   - Ausgabe der Pflanzendaten (Übersicht) <br>
   - Bearbeiten der Pflanzendaten <br>
   - Löschung von Einträgen
