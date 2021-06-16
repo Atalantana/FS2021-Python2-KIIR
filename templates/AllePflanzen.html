@@ -27,6 +27,7 @@
         <img src="../static/erbse.jpg" width="100" height="80" class="rounded-circle";>
 </div>
 <div class="container">
+    <!-- Navigationsleiste  !-->
 <nav class="navbar navbar-expand-lg navbar-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -51,6 +52,8 @@
 </div>
 <br>
 <div class="container">
+    <!-- Tabelle in Formular eingebettet, damit das Löschen und aktualisieren der Tabelleneinträge möglich wird
+         Anzeige                                                                                                !-->
     <form action="loesch" method="POST">
 <table style="width: 90%;" id="table">
       <thead>
@@ -66,12 +69,18 @@
 
 
         <tr>
+            <!-- Anzeige (mittels Jinja) der generierten Listeneinträge in der JSON-Datei mithilfe der Funktion "def anzeigeAlle()" in "main.py" !-->
             {% for item in anzeige %}
           <td>{{item["Pflanzentyp"]}}</td>
           <td>{{item["Pflanzenname"]}}</td>
           <td>{{item["Kaufdatum"]}}</td>
           <td>{{item["Wassergabe"]}}</td>
           <td>{{item["Tage"]}}</td>
+
+            <!-- Buttons für das Löschen und Aktualisieren der Tabelleneinträge auf der HTML-Seite "AllePflanzen.html" mithilfe der Funktionen "def loesch()" sowie "def aktual()".
+                 Im Button "Aktualisieren" wird mithilfe "formaction" auf die @appRoute /aktual verwiesen,
+                 welche die Funktion zur Aktualisierung des Wassergabedatums beinhaltet  und ausgeführt wird, sobald man auf den Button klickt                   !-->
+
             <td><button type="submit" name="aktual" id="aktual" value="{{item['Timestamp']}}" class="btn btn-secondary btn-sm" formaction="/aktual" style="color: white; background-color: #3A7734; border-color: #3A7734;">Wassergabe aktualisieren</button></td>
             <td><button type="submit" name="delpfl" id="delpfl" value="{{item['Timestamp']}}" class="btn btn-primary btn-sm" style="color: white; background-color: #3A7734; border-color: #3A7734; ">Löschen</button></td>
         </tr>

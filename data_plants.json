@@ -4,14 +4,14 @@
         "Pflanzenname": "Era",
         "Pflanzentyp": "Chilli",
         "Timestamp": "1623077233.123411",
-        "Wassergabe": "2021-06-04"
+        "Wassergabe": "2021-06-14"
     },
     {
         "Kaufdatum": "2021-05-03",
         "Pflanzenname": "Kakti",
         "Pflanzentyp": "Chilli",
         "Timestamp": "1623079177.281791",
-        "Wassergabe": "2021-05-19"
+        "Wassergabe": "2021-06-16"
     },
     {
         "Kaufdatum": "2021-04-03",
@@ -33,5 +33,12 @@
         "Pflanzentyp": "Orchidee",
         "Timestamp": "1623167458.824272",
         "Wassergabe": "2021-06-08"
+    },
+    {
+        "Kaufdatum": "2021-06-06",
+        "Pflanzenname": "df",
+        "Pflanzentyp": "Kaktus",
+        "Timestamp": "1623698572.955908",
+        "Wassergabe": "2021-06-07"
     }
 ]
