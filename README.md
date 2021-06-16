@@ -15,7 +15,9 @@
   - Ausgabe der Pflanzendaten (Übersicht) <br>
   - Speicherung und Anzeige der Einträge <br>
   - Aktualisierung des Wassergabedatums <br>
-  - Löschung von Einträgen
+  - Löschung von Einträgen <br>
+  - Anzeigen einer Pie-Chart mit Übersicht aller vorhandener Pflanzentypen <br>
+  - Navigation mittels Buttons sowie einer Navigationsbar (mit Anzeige der gerade aufgerufenen Seite)
 </p>
 
 <h3>Technische Vorgänge</h3>
@@ -26,10 +28,12 @@ Ebenso ist es möglich, dass Listeneinträge wieder gelöscht werden können ("L
 Nebst dem Löschen und dem Aktualisieren von Listeneinträgen werden zudem die Tage berechnet, welche seit der letzten Wassergabe vergangen sind. Diese Berechnung erfolgt auch mit datetime.today(), allerdings muss hier vor der eigentlichen Berechnung der Differenz zwischen Wassergabedatum und dem aktuellen Datum eine Umwandlung des letzten Wassergabedatums von einem String zu einem Zahlenwert ("echtes Datum") erfolgen, da sonst keine Berechnung erfolgen kann.  
 </p>
 
+<h3> Benutzte Programmiersprachen </h3>
+Für die Programmierung des vorliegenden Programmes wurden HTML-, Python-, Jinja-, Bootstrap- sowie CSS-Elemente verwendet.
 
 <h3>Tutorial / Wie benutze ich das Programm?</h3>
 <p>
-Das Programm ist so ausgelegt, dass es lokal verwendet wird. Das heisst, dass es nicht von mehreren Personen gleichzeitig benutzt werden sollte. 
+Das Programm ist so ausgelegt, dass es lokal verwendet wird. Es kann von mehreren Personen genutzt werden. Bei einer Benutzung ab 2 Personen muss jedoch darauf aufgepasst werden, dass nicht ausversehen Listeneinträge gelöscht werden.
 
 <h4>Startseite</h4>
 <p>Auf der Startseite wird man Willkommen geheissen und es werden direkt (sofern vorhanden) die bereits eingetragenen Pflanzen mit Pflanzentyp, Pflanzenname und Tage seit letzter Wassergabe sortiert nach dem letzten Wassergabedatum angezeigt. Mit Klick auf den Button "Loslegen" gelangt man nun direkt zur Seite, wo man mit einem Formular einen Eintrag anlegen kann. <br><br>
@@ -50,3 +54,8 @@ Auf der Seite "Statistiken" wird dem Benutzer eine Pie Chart angezeigt, in welch
 
 </p>
 
+
+<h3>Kontakt</h3>
+Sollten Fragen zum Programm auftauchen, so kann man sich jederzeit an den Github-Account von Irene Kilchenmann (@Atalantana) wenden. 
+<br>
+<h2>Viel Spass!</h2>
